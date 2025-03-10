@@ -1,0 +1,24 @@
+Different structure for table vhs_utilisateur:
+- In lakartxela.sql: UNIQUE KEY `adressMail` (`adressMail`),
+- In lakartxela.sql: KEY `pseudo` (`pseudo`) USING BTREE
+- In lakartxela.sql: ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
++ In local jules.sql: UNIQUE KEY `pseudo` (`pseudo`),
++ In local jules.sql: UNIQUE KEY `adressMail` (`adressMail`)
++ In local jules.sql: ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+
+Different structure for table vhs_question:
+- In lakartxela.sql: PRIMARY KEY (`idQuestion`)
+- In lakartxela.sql: ) ENGINE=InnoDB AUTO_INCREMENT=155 DEFAULT CHARSET=latin1;
++ In local jules.sql: `cheminImage` varchar(255) NOT NULL,
++ In local jules.sql: `idOa` int(11) DEFAULT NULL,
++ In local jules.sql: PRIMARY KEY (`idQuestion`),
++ In local jules.sql: KEY `idOa` (`idOa`)
++ In local jules.sql: ) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=latin1;
+
+Different structure for table vhs_derniereSave:
+- In lakartxela.sql: ) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
++ In local jules.sql: ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+
+Different structure for table vhs_watchlist_oa:
+- In lakartxela.sql: `ordre` int(11) DEFAULT NULL,
+
